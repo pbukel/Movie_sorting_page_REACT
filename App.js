@@ -24,16 +24,13 @@ function App() {
   const [getAction, setAction] = useState(0);
 
   function checking(item) {
-    //
+    
     if (item.includes("Animaciniai")) setAnim(getAnim + 1);
     if (item.includes("Dramos")) setDrama(getDrama + 1);
     if (item.includes("Veiksmo")) setAction(getAction + 1);
     if (item.includes("Siaubo")) setHorro(getHorro + 1);
 
-    // if (item.includes("Animaciniai")) console.log(item);
-    // if (item.includes("Dramos")) console.log(item);
-    // if (item.includes("Veiksmo")) console.log(item);
-    // if (item.includes("Siaubo")) console.log(item);
+    
   }
 
   useEffect(() => {
